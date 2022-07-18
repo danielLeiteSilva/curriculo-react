@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#info{
+    width: 40%;
+    height: 1800px;
+    background-color:#008080;
+}
+
+#info #cabecalho{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#info #cabecalho #imagem-logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#names{
+    width: 80%;
+    padding: 5px;
+    border: none;
+    position: relative;
+    top: 10px;
+}
+
+#info #cabecalho #imagem-logo img{
+    width: 100%;
+    transition: 1s;
+}
+
+#info #cabecalho #imagem-logo img:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+#info-nome{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff; 
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 0 40px 0;
+}
+
+#info-nome h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+#personal-information{
+    width: 80%;
+    height: 180px;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+
+#personal-information h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15pt;
+    letter-spacing: -1px;    
+}
+
+#information{
+    width: 100%;
+    height: 72%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+
+.row{
+    display: flex;
+    font-size: 14pt;
+    border-bottom: 1px solid #fff;
+    margin-top: 10px;
+    letter-spacing: -1px;
+}
+
+.row .desc{
+    width: 40%;
+    font-weight: 600;
+}
+
+.row .cont{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#contato-information{
+    width: 80%;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+}
+
+#contato-information h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    margin: 50px 0 5px 0;
+    text-transform: uppercase;
+    font-size: 15pt;
+    letter-spacing: -1px;    
+}
+
+#social-information{
+    width: 80%;
+    position: relative;
+    top: 100px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+#social-information h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    margin: 70px 0 5px 0;
+    text-transform: uppercase;
+    font-size: 15pt;
+    letter-spacing: -1px;
+}
+
+#social-information #information{
+    border-bottom: none;
+    border-top: 5px solid #fff;
+}
+
+
+#social-information #information .row{
+    border-bottom: none;
+    margin: 25px 0 0 0; 
+}
+
+.logo div{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: 	#008080;
+}
+.info div{
+    position: relative;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#content{
+    display: flex;
+    width: 100%;
+}
+#information-perfil{
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: 	#008080;
+    display: flex;
+    flex-direction: column;
+    
+}
+#perfil{
+    width: 80%;
+    padding: 50px 10px 0 10px;
+    margin: 0 auto;
+}
+
+#perfil h1{
+    margin-bottom: 10px;
+}
+
+#content-perfil{
+    width: 100%;
+    border-top: 4px solid #000;
+    padding-top : 20px;
+    color: #a1a1a1;
+}
+
+#graph{
+    width: 100%;
+    height: 180px;
+    margin-top: 10px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.graph-info{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#experiencia{
+    width: 80%;
+    padding: 70px 10px 0 10px;
+    margin: 0 auto;
+}
+
+#experiencia h1{
+    margin-bottom: 10px;
+}
+
+#content-experiencia{
+    width: 100%;
+    border-top: 4px solid #000;
+    padding-top : 20px;
+    color: #a1a1a1;
+}
+
+.graph-info div{
+    position: absolute;
+    margin-top: 30px;
+    font-size: 15pt;
+}
+
+.content-data{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.content-data div{
+    width: calc(100% / 3);
+}
+.content-data .content-info{
+    width: 510px;
+}
+
+.content-data .content-info h1, h3{
+    text-transform: uppercase;
+}
+
+.content-data .content-info h1{
+    color: #008080;
+    font-size: 13pt;
+}
+
+.content-data .content-info h3{
+    color: #a0a0a0;
+    font-size: 15pt;
+    margin-bottom: 5px;
+}
+
+.content-data .info-point{
+    width: 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-data div .circle{
+    width: 20px;
+    height: 20px;
+    background-color: #a9a9a9;
+    border-radius: 50px;
+    border: none;
+    margin-top: 10px;
+}
+.content-data div .line{
+    width: 3px;
+    height: 90%;
+    padding: 0;
+    background-color: #a9a9a9;
+    border: none;
+    margin-bottom: -10px;
+}
+
+.content-data .content-year {
+    display: flex;
+}
+
+.content-data .content-year .retangule{
+    width: 100px;
+    height: 40px;
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15pt;
+}
+.content-data .content-year .triangule{
+    width: 50px;
+    height: 40px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #008080;
+}
+
+.content-data .content-info{
+    padding: 10px;
+}
+
+#academico{
+    width: 80%;
+    padding: 70px 10px 0 10px;
+    margin: 0 auto;
+}
+
+#content-academico{
+    width: 100%;
+    border-top: 4px solid #000;
+    padding-top : 20px;
+    color: #a1a1a1;
+}
+
+.content-data-academico{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.content-data-academico div{
+    width: calc(100% / 3);
+}
+.content-data-academico .content-info{
+    width: 510px;
+}
+
+.content-data-academico .content-info h1{
+    text-transform: uppercase;
+}
+
+.content-data-academico .info-point{
+    width: 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-data-academico div .circle{
+    width: 15px;
+    height: 15px;
+    background-color: #a9a9a9;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+}
+.content-data-academico div .line{
+    width: 3px;
+    height: 90%;
+    padding: 0;
+    background-color: #a9a9a9;
+    border: none;
+    margin-bottom: -10px;
+}
+
+.content-data-academico .content-year {
+    display: flex;
+}
+
+.content-data-academico .content-year .retangule{
+    width: 100px;
+    height: 40px;
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15pt;
+}
+.content-data-academico .content-year .triangule{
+    width: 50px;
+    height: 40px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #008080;
+}
+
+.content-data-academico .content-info{
+    padding: 10px;
+}
+
+.content-data-academico .content-info h1, h3{
+    text-transform: uppercase;
+}
+
+.content-data-academico .content-info h1{
+    color: #008080;
+    font-size: 13pt;
+}
+
+.content-data-academico .content-info h3{
+    color: #a0a0a0;
+    font-size: 15pt;
+    margin-bottom: 5px;
+}
+#tenico{
+    width: 80%;
+    padding: 70px 10px 0 10px;
+    margin: 0 auto;
+    display: flex; 
+}
+
+.idiomas h1{
+    text-transform: uppercase;
+}
+.software h1{
+    text-transform: uppercase;
+}
+
+.software{
+    width: 50%; 
+    margin-right: 20px;
+}
+.idiomas{
+    width: 50%; 
+}
+
+#content-software{
+    width: 100%;
+    border-top: 4px solid #000;
+    padding-top : 20px;
+    color: #a1a1a1;
+}
+
+#content-idiomas{
+    width: 100%;
+    border-top: 4px solid #000;
+    padding-top : 20px;
+    color: #a1a1a1;
+}
