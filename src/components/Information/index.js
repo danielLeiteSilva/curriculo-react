@@ -2,7 +2,7 @@ import Header from "../Header";
 import Content from '../Content'
 import Personal from "../Personal";
 import Contato from "../Contato";
-import StarWarsService from "../../services/StarwarsService";
+import UsersService from "../../services/UsersService";
 
 import { useEffect, useState } from "react";
 
@@ -12,13 +12,12 @@ import Social from "../Social";
 function Information() {
 
     const [info, setInfo] = useState([])
-    let ids = 1
 
     useEffect(() => {
-        StarWarsService()
+        UsersService()
             .then(response => response.json())
             .then(data => {
-                setInfo(data.results)
+                setInfo(data)
             })
             .catch(error => console.log(error))
     }, [])
@@ -27,11 +26,11 @@ function Information() {
         console.log(event.target.value)
     }
 
-    const elements = info.map(element => {
-        return (
-            <option value={ids++} key={element.name}>{element.name}</option>
-        )
-    })
+    // const elements = info.map(element => {
+    //     return (
+    //         <option value={element.name} key={element.name} />
+    //     )
+    // })
 
 
     return (
@@ -39,13 +38,16 @@ function Information() {
             <article id="info">
                 <Header />
                 <div id="info-nome">
-                    <h1>Daniel Leite</h1>
-                    <h5>Junior Developer</h5>
+                    <h1>{info[0]?.nome}</h1>
+                    <h5></h5>
+                    {/* <input list="names" id="search"/> */}
                     <select id="names" onClick={handlerInfo}>
-                        {elements}
+                        {info.map(element => {
+                            return <option value={element._id} key={element._id}>{element.nome}</option>
+                        })}
                     </select>
                 </div>
-                <Personal>Informação pessoal</Personal>
+                <Personal data_info={info}>Informação pessoal</Personal>
                 <Contato>Contato</Contato>
                 <Social>Redes Sociais</Social>
             </article>
