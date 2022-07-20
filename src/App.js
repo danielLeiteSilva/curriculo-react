@@ -1,10 +1,16 @@
 import Information from "./components/Information";
+import ErrorBoundary from './Error'
 import "./styles.css"
 
 function App() {
   return (
-    <Information />
-  );
+    <ErrorBoundary >
+      <Information />
+    </ErrorBoundary>
+  )
+
+
 }
+
 
 export default App;

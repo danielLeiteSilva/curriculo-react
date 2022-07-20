@@ -1,25 +1,28 @@
 import "./styles.css"
 
 function Contato(props) {
+
+    const { rua, bairro, cidade, numero } = props.data_info.contato.endereco
+
     return (
         <div id="contato-information">
             <h1>{props.children}</h1>
             <div id="information">
-                <div class="row">
-                    <div class="desc">Telefone: </div>
-                    <div class="cont">(11) 5933-6620</div>
+                <div className="row">
+                    <div className="desc">Telefone: </div>
+                    <div className="cont">{props.data_info.contato.telefone}</div>
                 </div>
-                <div class="row">
-                    <div class="desc">Celular: </div>
-                    <div class="cont">(11) 94366-6624</div>
+                <div className="row">
+                    <div className="desc">Celular: </div>
+                    <div className="cont">{props.data_info.contato.celular}</div>
                 </div>
-                <div class="row">
-                    <div class="desc">E-mail: </div>
-                    <div class="cont">daniel199257@hotmail.com</div>
+                <div className="row">
+                    <div className="desc">E-mail: </div>
+                    <div class="cont">{props.data_info.contato.email}</div>
                 </div>
-                <div class="row">
-                    <div class="desc">Endereço: </div>
-                    <div class="cont">Rua universal, 333 - Cantinho do Céu São Paulo - SP</div>
+                <div className="row">
+                    <div className="desc">Endereço: </div>
+                    <div className="cont">{`Rua ${rua.toLowerCase()}, ${numero} - ${bairro} - ${cidade}`}</div>
                 </div>
             </div>
         </div>

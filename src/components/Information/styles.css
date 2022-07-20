@@ -8,7 +8,6 @@
 
 #info{
     width: 40%;
-    height: 1800px;
     background-color:#008080;
 }
 
@@ -185,6 +184,7 @@
 #content{
     display: flex;
     width: 100%;
+    min-height: 800px;
 }
 #information-perfil{
     width: 100%;

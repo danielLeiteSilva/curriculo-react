@@ -1,6 +1,7 @@
-function UsersService(){
-    const url = "http://localhost:8080/api/v1/users"
-    return fetch(url)
-}
+import axios from "axios"
 
-export default UsersService
+const UserService = axios.create({
+  baseURL: "http://localhost:8080"
+});
+
+export default UserService;
