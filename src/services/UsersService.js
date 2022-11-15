@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const UserService = axios.create({
-  baseURL: "http://localhost:8080"
+  baseURL: "https://curriculo-backend.herokuapp.com"
 });
 
 export default UserService;

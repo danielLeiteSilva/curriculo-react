@@ -6,7 +6,7 @@ function Header(props) {
 
         <header id="cabecalho">
             <figure id="imagem-logo">
-                <img src={`data:image/jpg;base64, ${props.data_info.image}`} alt="foto" />
+                <img src={props.data_info.image} alt="foto" />
             </figure>
         </header>
     );
