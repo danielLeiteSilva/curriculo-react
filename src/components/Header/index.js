@@ -1,11 +1,12 @@
 import './styles.css'
-import Foto from '../../assets/imagem.jpg'
 
-function Header() {
+function Header(props) {
+
     return (
+
         <header id="cabecalho">
             <figure id="imagem-logo">
-                <img src={Foto} alt="foto" />
+                <img src={props.data_info.image} alt="foto" />
             </figure>
         </header>
     );
